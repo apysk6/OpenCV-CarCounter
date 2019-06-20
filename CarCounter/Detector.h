@@ -20,6 +20,8 @@ private:
 	Mat cameraFrame;
 	Mat foreground;
 	vector<vector<Point>> contours;
+	clock_t start = clock();
+	clock_t crossedTime;
 	int horizontalLinePosition;
 	int carCount = 0;
 	Point crossedCenterPoint;
