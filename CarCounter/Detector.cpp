@@ -25,8 +25,6 @@ Point* Detector::makeCrossingLine(int cameraFrameCols) {
 }
 
 void Detector::detectCars() {
-	clock_t start = clock();
-	clock_t crossedTime;
 	Mat countour = this->foreground.clone();
 	findContours(countour, contours, RETR_LIST, CHAIN_APPROX_NONE);
 
